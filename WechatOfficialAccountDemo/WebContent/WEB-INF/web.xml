@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   
+
+    <servlet>
+        <servlet-name>InitServlet</servlet-name>
+        <servlet-class>
+            com.souvc.weixin.servlet.InitServlet
+        </servlet-class>
+        <!-- 配置获取access_token所需参数appid和appsecret -->
+        <init-param>
+            <param-name>appid</param-name>
+            <param-value>wx277afa1f1210a601</param-value>
+        </init-param>
+        <init-param>
+            <param-name>appsecret</param-name>
+            <param-value>de27b2a651c6912d45b61adfe32f4fa9</param-value>
+        </init-param>
+        <load-on-startup>0</load-on-startup>
+        <!--没有配置<servlet- mapping>，因为InitServlet并不对外提供访问。-->
+    </servlet>
+    
+    
+
+    
+    
+    
+</web-app>
