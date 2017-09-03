@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <package name="default" extends="struts-default" namespace="/"> 
+      <!-- 注册 -->    
+      <action name="register"  
+            class="com.picture.yi.RegisterAction"  
+            method="execute"> 
+            <result name="success" >/login_success.jsp</result>
+            <result name="fail">/registerFail.jsp</result>
+            <result name="input">/index.jsp</result>
+      </action>
+     <!-- 登陆 -->
+      <action name="login"
+      		class="com.picture.yi.LoginAction"
+      		method="execute">
+      		 <result name="success">/login_success.jsp</result> <!--这行可以注释掉，只要有方法就可以了 ,但在跳转中就得要用到了 -->
+    <result name="input">/index.jsp</result><!-- 花了一天才知道要加这一行！ -->
+      		 
+      </action>  
+      
+      <!-- 生成验证码 -->       
+      <action name="rand" class="auth.RandomAction">     
+       <result type="stream">     
+            <param name="inputName">inputStream</param>  
+       </result>  </action>
+       
+    
+       
+    </package> 
+</struts>    
