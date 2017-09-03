@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BB</string>
+    <string name="tab_menu_alert">警告</string>
+    <string name="tab_menu_profile">文档</string>
+    <string name="tab_menu_pay">支付</string>
+    <string name="tab_menu_setting">设置</string>
+</resources>

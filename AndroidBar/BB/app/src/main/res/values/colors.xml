@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3fb5a7</color><!--actionBar(top)'s color-->
+    <color name="text_gray">#fd989195</color><!--text's color normal-->
+    <color name="text_yellow">#ffef40</color><!--text's color after pressed-->
+    <color name="bg_red">#f3f5f2</color><!--padding color(bottom's navigationBar) before pressed-->
+    <color name="div_black">#f6f2f2</color><!--the line(just 2 px,
+    just to recognize the boundary) color between navigationBar and fragement-->
+
+</resources>
